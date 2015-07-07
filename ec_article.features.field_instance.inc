@@ -624,6 +624,75 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_article'
+  $field_instances['node-product_page-field_ref_prodpage_article'] = array(
+    'bundle' => 'product_page',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => 'Select the Article pages (News, Press release, or other type of Article content) on which to show this product.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_prodpage_article',
+    'label' => 'Article',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'current' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 20,
+    ),
+  );
+
   // Exported field_instance: 'node-promotion-field_ref_promo_article'
   $field_instances['node-promotion-field_ref_promo_article'] = array(
     'bundle' => 'promotion',
@@ -775,6 +844,7 @@ function ec_article_field_default_field_instances() {
   t('Featured Image');
   t('Name of the author of this article, if relevant');
   t('Select article pages (news, press release, etc.) on which to display this promo.');
+  t('Select the Article pages (News, Press release, or other type of Article content) on which to show this product.');
   t('Selected article pages on which to show this testimonial.');
 
   return $field_instances;
