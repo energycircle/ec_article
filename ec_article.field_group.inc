@@ -123,6 +123,7 @@ function ec_article_field_group_info() {
       1 => 'field_ref_article_promo',
       2 => 'field_ref_article_blog',
       3 => 'field_ref_article_case_study',
+      4 => 'field_ref_article_product',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
