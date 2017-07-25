@@ -20,12 +20,6 @@ function ec_article_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'article-types/press-release',
-        'language' => 'und',
-      ),
-    ),
   );
   $terms[] = array(
     'name' => 'News',
@@ -36,12 +30,6 @@ function ec_article_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'article_types',
     'path' => array(
       'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'article-types/news',
-        'language' => 'und',
-      ),
     ),
   );
   return $terms;
